@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:07:58 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/16 16:46:37 by toespino         ###   ########.fr       */
+/*   Updated: 2025/11/04 18:50:13 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,6 @@
 
 void	*ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*ptr;
-
-	ptr = s;
-	i = 0;
-	while (i < n)
-	{
-		ptr[i] = '\0';
-		i++;
-	}
+	s = ft_memset(s, 0, n);
 	return (s);
 }

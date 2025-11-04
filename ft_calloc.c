@@ -6,7 +6,7 @@
 /*   By: toespino <toespino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 12:30:46 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/28 15:18:32 by toespino         ###   ########.fr       */
+/*   Updated: 2025/11/04 18:51:36 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	res = malloc(mas);
 	if (!res)
 		return (NULL);
-	ft_memset(res, '\0', mas);
+	ft_bzero(res, mas);
 	return (res);
 }

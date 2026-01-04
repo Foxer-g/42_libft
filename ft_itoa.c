@@ -6,15 +6,15 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 10:27:35 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/29 19:32:43 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/04 23:45:11 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_lennbr(int nbr)
+static uint64_t	ft_lennbr(int32_t nbr)
 {
-	size_t	out;
+	uint64_t	out;
 
 	out = 0;
 	if (nbr == -2147483648)
@@ -36,14 +36,14 @@ static size_t	ft_lennbr(int nbr)
 	return (out);
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa(int32_t n)
 {
-	char	*out;
-	size_t	len_nbr;
-	long	n_b;
+	char		*out;
+	uint64_t	len_nbr;
+	int64_t		n_b;
 
 	len_nbr = ft_lennbr(n);
-	n_b = (long)n;
+	n_b = (int64_t)n;
 	out = ft_calloc(len_nbr + 1, sizeof(char));
 	if (!out)
 		return (NULL);

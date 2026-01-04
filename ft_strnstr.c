@@ -6,18 +6,18 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 11:02:11 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/29 14:58:59 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:18:45 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, uint64_t len)
 {
-	size_t	i;
-	size_t	j;
-	char	*str;
-	char	*to_find;
+	uint64_t	i;
+	uint64_t	j;
+	char		*str;
+	char		*to_find;
 
 	i = 0;
 	j = 0;

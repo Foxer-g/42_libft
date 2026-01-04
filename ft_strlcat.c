@@ -6,17 +6,17 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:01:55 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/19 12:11:07 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:08:45 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+uint64_t	ft_strlcat(char *dst, const char *src, uint64_t size)
 {
-	size_t	len;
-	size_t	lenbis;
-	size_t	i;
+	uint64_t	len;
+	uint64_t	lenbis;
+	uint64_t	i;
 
 	lenbis = ft_strlen((char *)src);
 	if (size == 0)

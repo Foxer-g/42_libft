@@ -6,15 +6,15 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 15:49:36 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/29 17:44:40 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:01:37 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int32_t fd)
 {
-	int	i;
+	int32_t	i;
 
 	i = 0;
 	if (fd < 0 || !s)

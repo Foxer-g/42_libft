@@ -6,17 +6,15 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:30:27 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/30 14:25:31 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/04 23:50:04 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int32_t	ft_isprint(int32_t c)
 {
 	if (c >= 32 && c <= 126)
-	{
 		return (1);
-	}
 	return (0);
 }

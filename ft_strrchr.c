@@ -6,17 +6,17 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:27:00 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/17 16:40:58 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:19:19 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int32_t c)
 {
 	char	*dest;
-	int		i;
-	int		lens;
+	int32_t		i;
+	int32_t		lens;
 
 	dest = NULL;
 	i = 0;

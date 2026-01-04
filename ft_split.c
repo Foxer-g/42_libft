@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 14:02:03 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/28 18:46:38 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:03:47 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	*ft_free(char **str)
 {
-	int	i;
+	int32_t	i;
 
 	i = 0;
 	while (str[i])
@@ -26,9 +26,9 @@ static void	*ft_free(char **str)
 	return (NULL);
 }
 
-static int	ft_len_next_word(char const *s, char c)
+static int32_t	ft_len_next_word(char const *s, char c)
 {
-	int	i;
+	int32_t	i;
 
 	i = 0;
 	while (*s && *s != c)
@@ -39,9 +39,9 @@ static int	ft_len_next_word(char const *s, char c)
 	return (i);
 }
 
-static int	ft_count_wrd(char const *s, char c)
+static int32_t	ft_count_wrd(char const *s, char c)
 {
-	int	i;
+	int32_t	i;
 
 	i = 0;
 	while (*s)
@@ -59,7 +59,7 @@ static int	ft_count_wrd(char const *s, char c)
 
 char	**ft_split(const char *s, char c)
 {
-	int		i;
+	int32_t	i;
 	char	**out;
 
 	i = 0;

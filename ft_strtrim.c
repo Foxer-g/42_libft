@@ -6,15 +6,15 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 13:38:37 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/28 18:47:44 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:20:07 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_isset(char c, const char *set)
+static int32_t ft_isset(char c, const char *set)
 {
-	int	i;
+	int32_t	i;
 
 	i = 0;
 	while (set[i])
@@ -28,8 +28,8 @@ static int	ft_isset(char c, const char *set)
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	int		i;
-	int		len;
+	int32_t		i;
+	int32_t		len;
 	char	*out;
 
 	if (!s1 || !set)

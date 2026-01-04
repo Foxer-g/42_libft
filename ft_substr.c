@@ -6,16 +6,16 @@
 /*   By: toespino <toespino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 18:14:31 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/28 13:56:43 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:20:45 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, uint32_t start, uint64_t len)
 {
 	char	*out;
-	size_t	lens;
+	uint64_t	lens;
 
 	if (!s)
 		return (NULL);

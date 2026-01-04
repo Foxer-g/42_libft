@@ -6,15 +6,15 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:07:58 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/16 16:46:14 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/04 23:58:54 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int32_t c, uint64_t n)
 {
-	size_t			i;
+	uint64_t		i;
 	unsigned char	*ptr;
 
 	ptr = s;

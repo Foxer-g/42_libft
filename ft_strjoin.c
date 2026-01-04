@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 12:58:25 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/30 14:17:54 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:07:18 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*out;
-	int		i;
-	int		j;
+	int32_t	i;
+	int32_t	j;
 
 	i = 0;
 	j = 0;

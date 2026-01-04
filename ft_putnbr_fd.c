@@ -6,13 +6,13 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 15:56:32 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/30 12:18:23 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:01:18 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int32_t n, int32_t fd)
 {
 	if (fd < 0)
 		return ;

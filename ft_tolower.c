@@ -6,17 +6,15 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:03:13 by toespino          #+#    #+#             */
-/*   Updated: 2025/10/16 15:09:09 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/05 00:21:58 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int32_t	ft_tolower(int32_t c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
-		c += ' ';
-	}
+		c += ('a'-'A');
 	return (c);
 }

@@ -1,6 +1,9 @@
 CC = cc
 CFLAGS = -Wextra -Wall -Werror 
 NAME = libft.a
+SRCDIR = src/
+OBJDIR = build/
+INCLUDE = -Iinclude
 OBJ = ft_isalpha.o \
 	ft_isdigit.o \
 	ft_isalnum.o\
@@ -35,8 +38,7 @@ OBJ = ft_isalpha.o \
 	ft_putstr_fd.o\
 	ft_putendl_fd.o\
 	ft_putnbr_fd.o\
-
-OBJ_BONUS = ft_lstnew_bonus.o\
+	ft_lstnew_bonus.o\
 	ft_lstadd_front_bonus.o\
 	ft_lstsize_bonus.o\
 	ft_lstlast_bonus.o\
@@ -46,21 +48,26 @@ OBJ_BONUS = ft_lstnew_bonus.o\
 	ft_lstiter_bonus.o\
 	ft_lstmap_bonus.o\
 
+OBJS = $(addprefix $(OBJDIR), $(OBJ))
+
 all : $(NAME)
 
-$(NAME) : $(OBJ)
-	ar -rcs $(NAME) $(OBJ)
+$(OBJDIR):
+	mkdir -p $@
 
-bonus : $(OBJ_BONUS) $(NAME)
-	ar -rcs $(NAME) $(OBJ) $(OBJ_BONUS)
-%.o : %.c
-	$(CC) $(CFLAGS) $< -c -o $@
+$(NAME) : $(OBJS)
+	ar -rcs $(NAME) $(OBJS)
+
+$(OBJDIR)%.o : $(SRCDIR)%.c | $(OBJDIR)
+	$(CC) $(CFLAGS) $(INCLUDE) $< -c -o $@
 
 clean : 
-	rm -rf $(OBJ) $(OBJ_BONUS)
+	rm -rf $(OBJDIR)
 
 fclean : clean
-	rm -rf $(NAME)
+	rm -f $(NAME)
 
-re : fclean all
+re : fclean
+	make all
 
+.PHONY: all clean fclean re

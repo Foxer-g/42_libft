@@ -6,13 +6,13 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 12:58:25 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/05 00:07:18 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 15:53:59 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*out;
 	int32_t	i;

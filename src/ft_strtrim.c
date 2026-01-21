@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 13:38:37 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/05 00:20:07 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 15:59:07 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int32_t ft_isset(char c, const char *set)
 	return (0);
 }
 
-char	*ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(char *s1, char *set)
 {
 	int32_t		i;
 	int32_t		len;

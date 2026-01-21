@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 14:02:03 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/05 00:03:47 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 16:02:36 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ static int32_t	ft_count_wrd(char const *s, char c)
 	return (i);
 }
 
-char	**ft_split(const char *s, char c)
+char	**ft_split(char *s, char c)
 {
 	int32_t	i;
 	char	**out;

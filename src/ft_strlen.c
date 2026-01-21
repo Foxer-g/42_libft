@@ -6,13 +6,13 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:20:39 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/05 00:10:15 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 15:30:40 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-uint64_t	ft_strlen(const char *str)
+uint64_t	ft_strlen(char *str)
 {
 	uint64_t	i;
 

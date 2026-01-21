@@ -6,13 +6,13 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:18:40 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/05 00:10:50 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 16:03:44 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(const char *s, char (*f)(uint32_t, char))
+char	*ft_strmapi(char *s, char (*f)(uint32_t, char))
 {
 	uint32_t	i;
 	char		*out;

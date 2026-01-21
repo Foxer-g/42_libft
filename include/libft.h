@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:01:14 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/21 15:24:48 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 15:26:05 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
+# include <stdbool.h>
 
 bool		ft_isalpha(int32_t c);
 bool		ft_isdigit(int32_t c);

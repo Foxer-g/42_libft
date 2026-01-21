@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:35:08 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/04 23:55:41 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 19:51:05 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, uint64_t n)
 {
-	uint64_t				i;
+	uint64_t			i;
 	unsigned char		*ptr;
 	const unsigned char	*ptr2;
 

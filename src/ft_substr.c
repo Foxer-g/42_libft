@@ -6,7 +6,7 @@
 /*   By: toespino <toespino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 18:14:31 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/21 15:44:30 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 19:53:28 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char *s, uint32_t start, uint64_t len)
 {
-	char	*out;
+	char		*out;
 	uint64_t	lens;
 
 	if (!s)

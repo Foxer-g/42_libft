@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:27:00 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/05 00:19:19 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 19:51:25 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int32_t c)
 {
-	char	*dest;
+	char		*dest;
 	int32_t		i;
 	int32_t		lens;
 

@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:27:00 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/04 23:52:52 by toespino         ###   ########.fr       */
+/*   Updated: 2026/01/21 19:50:48 by toespino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int32_t c, uint64_t n)
 {
 	char			*dest;
-	uint64_t			i;
+	uint64_t		i;
 	unsigned char	*temp;
 
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: toespino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:01:14 by toespino          #+#    #+#             */
-/*   Updated: 2026/01/21 16:53:16 by toespino         ###   ########.fr       */
+/*   Updated: 2026/02/13 01:43:53 by f0xer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ bool		ft_isalnum(int32_t c);
 bool		ft_isascii(int32_t c);
 bool		ft_isprint(int32_t c);
 bool		ft_isspace(int32_t c);
+bool		ft_issignednum(int32_t c);
 
 uint64_t	ft_strlen(char *str);
 void		*ft_memset(void *s, int32_t c, uint64_t n);

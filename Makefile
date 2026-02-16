@@ -49,6 +49,13 @@ OBJ = ft_isalpha.o \
 	ft_lstclear_bonus.o\
 	ft_lstiter_bonus.o\
 	ft_lstmap_bonus.o\
+	ft_printf.o\
+	ft_putchar_f.o\
+	ft_puthexa_f.o\
+	ft_putnbr_f.o\
+	ft_putptr_f.o\
+	ft_putstr_f.o\
+	ft_putunbr_f.o\
 
 OBJS = $(addprefix $(OBJDIR), $(OBJ))
 
@@ -58,18 +65,19 @@ $(OBJDIR):
 	mkdir -p $@
 
 $(NAME) : $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+	$(AR) -rcs $(NAME) $(OBJS)
 
 $(OBJDIR)%.o : $(SRCDIR)%.c | $(OBJDIR)
 	$(CC) $(CFLAGS) $(INCLUDE) $< -c -o $@
 
-clean : 
+clean :
 	rm -rf $(OBJDIR)
 
 fclean : clean
 	rm -f $(NAME)
 
 re : fclean
-	make all
+	$(MAKE) all
 
 .PHONY: all clean fclean re
+

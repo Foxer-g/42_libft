@@ -14,7 +14,7 @@
 
 bool	ft_issignednum(int32_t c)
 {
-	if ((c >= '0' && c <= '9') || c == '-' || c == '+')
+	if (fT_isdigit(c) || c == '-' || c == '+')
 		return (true);
 	return (false);
 }

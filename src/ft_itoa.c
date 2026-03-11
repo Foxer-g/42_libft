@@ -19,7 +19,7 @@ static uint64_t	ft_lennbr(int32_t nbr)
 	out = 0;
 	if (nbr == -2147483648)
 	{
-		nbr = nbr / 10;
+		nbr /= 10;
 		out++;
 	}
 	if (nbr < 0)
@@ -29,7 +29,7 @@ static uint64_t	ft_lennbr(int32_t nbr)
 	}
 	while (nbr > 9)
 	{
-		nbr = nbr / 10;
+		nbr /= 10;
 		out++;
 	}
 	out++;
@@ -56,7 +56,7 @@ char	*ft_itoa(int32_t n)
 	while (n_b > 9)
 	{
 		out[len_nbr] = (n_b % 10) + 48;
-		n_b = n_b / 10;
+		n_b /= 10;
 		len_nbr--;
 	}
 	out[len_nbr] = n_b + 48;

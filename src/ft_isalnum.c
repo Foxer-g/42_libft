@@ -14,8 +14,7 @@
 
 bool	ft_isalnum(int32_t c)
 {
-	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z')
-		|| (c >= 'a' && c <= 'z'))
+	if (ft_isdigit(c) || ft_isalpha(c))
 		return (true);
 	return (false);
 }

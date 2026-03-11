@@ -21,19 +21,15 @@ int32_t	ft_atoi(const char *nptr)
 	i = 0;
 	res = 0;
 	sign = 1;
-	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
+	while (ft_isspace(nptr[i]))
 		i++;
-	if (nptr[i] == '-')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		sign *= -1;
+		if (nptr[i] == '-')
+			sign *= -1;
 		i++;
 	}
-	else if (nptr[i] == '+')
-		i++;
 	while (ft_isdigit(nptr[i]))
-	{
-		res = res * 10 + nptr[i] - 48;
-		i++;
-	}
+		res = res * 10 + nptr[i++] - 48;
 	return (res * sign);
 }

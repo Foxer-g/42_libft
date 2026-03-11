@@ -17,10 +17,8 @@ void	*ft_calloc(uint64_t nmemb, uint64_t size)
 	uint64_t	mas;
 	void		*res;
 
-	if (nmemb > 0 && size > ((uint64_t)-1) / nmemb)
-	{
+	if (nmemb > 0 && size > ((uint64_t) - 1) / nmemb)
 		return (0);
-	}
 	mas = nmemb * size;
 	res = malloc(mas);
 	if (!res)
